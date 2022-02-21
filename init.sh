@@ -1,5 +1,5 @@
 #!/bin/sh
-path=dirname "$(realpath $0)"
+path=$(dirname "$(realpath $0)")
 
 chmod +x $path/startup.sh
 

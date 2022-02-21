@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path=dirname "$(realpath $0)"
+path=$(dirname "$(realpath $0)")
 
 python3 -m venv $path/.venv
 . $path/.venv/bin/activate
