@@ -1,5 +1,5 @@
 #!/bin/sh
-path=$(dirname "$0")
+path=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
 chmod +x $path/startup.sh
 
