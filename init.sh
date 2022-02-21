@@ -1,8 +1,8 @@
 #!/bin/sh
-start_path=$PWD/startup.sh
+path=$PWD
 
-chmod +x $start_path
+chmod +x $path/startup.sh
 
-echo @lxterminal -e $start_path >> /etc/xdg/lxsession/LXDE-pi/autostart
+echo @lxterminal -e cd $path && ./startup.sh >> /etc/xdg/lxsession/LXDE-pi/autostart
 
-$start_path
+./startup.sh
