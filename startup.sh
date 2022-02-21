@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
+path=dirname "$(realpath $0)"
 
 python3 -m venv $path/.venv
 . $path/.venv/bin/activate
